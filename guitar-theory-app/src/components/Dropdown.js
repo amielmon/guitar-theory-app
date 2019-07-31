@@ -49,16 +49,20 @@ class DropMenu extends Component {
     render() {
         return (
             <div>
+              <div class="f6 link dim ph3 pv2 mb2 dib white bg-dark-blue" href="#0">
               <Dropdown overlay={rootMenu}>
-                  <a className="f9 lh-copy avenir">
+                  <div className="f9 lh-copy avenir">
                       Root Note <Icon type="down" />
-                  </a>
+                  </div>
               </Dropdown>
+              </div>
+              <div class="f6 link dim ph3 pv2 mb2 dib white bg-dark-blue" href="#0">
               <Dropdown overlay={chordMenu}>
-                  <a className="f9 lh-copy avenir">
+                  <div className="f9 lh-copy avenir">
                       Chord Type <Icon type="down" />
-                  </a>
+                  </div>
               </Dropdown>
+              </div>
           </div>
         )
     }
