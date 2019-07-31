@@ -1,42 +1,43 @@
 import { Menu, Dropdown, Icon } from 'antd'
 import React, { Component } from 'react'
+import 'antd/dist/antd.css'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router'
 
-const rootmenu = (
+const rootMenu = (
     <Menu>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+        <a className="f9 lh-copy avenir">
           A
         </a>
       </Menu.Item>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+        <a className="f9 lh-copy avenir">
           A#/Bb
         </a>
       </Menu.Item>
       <Menu.Item>
-        <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+        <a className="f9 lh-copy avenir">
           B
         </a>
       </Menu.Item>
     </Menu>
   );
   
-  const chordmenu = (
+  const chordMenu = (
       <Menu>
         <Menu.Item>
-          <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
+          <a className="f9 lh-copy avenir">
             Maj
           </a>
         </Menu.Item>
         <Menu.Item>
-          <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
+          <a className="f9 lh-copy avenir">
             Maj6
           </a>
         </Menu.Item>
         <Menu.Item>
-          <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
+          <a className="f9 lh-copy avenir">
             Maj7
           </a>
         </Menu.Item>
@@ -48,18 +49,17 @@ class DropMenu extends Component {
     render() {
         return (
             <div>
-              <Dropdown overlay={rootmenu}>
-                  <a className="ant-dropdown-link" href="#">
+              <Dropdown overlay={rootMenu}>
+                  <a className="f9 lh-copy avenir">
                       Root Note <Icon type="down" />
                   </a>
-              </Dropdown>,
-              <Dropdown overlay={chordmenu}>
-                  <a className="ant-dropdown-link" href="#">
+              </Dropdown>
+              <Dropdown overlay={chordMenu}>
+                  <a className="f9 lh-copy avenir">
                       Chord Type <Icon type="down" />
                   </a>
-              </Dropdown>,
-          </div>,
-          mountNode
+              </Dropdown>
+          </div>
         )
     }
 }
