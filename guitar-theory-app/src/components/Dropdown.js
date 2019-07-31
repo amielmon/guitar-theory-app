@@ -48,7 +48,7 @@ class DropMenu extends Component {
 
     render() {
         return (
-            <div>
+            <div class= "flex items-center">
               <div class="f6 link dim ph3 pv2 mb2 dib white bg-dark-blue" href="#0">
               <Dropdown overlay={rootMenu}>
                   <div className="f9 lh-copy avenir">
@@ -56,6 +56,7 @@ class DropMenu extends Component {
                   </div>
               </Dropdown>
               </div>
+              <div class="pa4"/>
               <div class="f6 link dim ph3 pv2 mb2 dib white bg-dark-blue" href="#0">
               <Dropdown overlay={chordMenu}>
                   <div className="f9 lh-copy avenir">
@@ -63,6 +64,7 @@ class DropMenu extends Component {
                   </div>
               </Dropdown>
               </div>
+              <div class="pa4"/>
           </div>
         )
     }
