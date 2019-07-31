@@ -7,7 +7,7 @@ import DropMenu from './Dropdown'
 class Header extends Component {
     render() {
       return (
-          <div className="flex pal justify-between black">
+          <div className="flex pa1 justify-between black">
             <div className="f1 lh-title avenir">FretFriend</div>
             <div>
               <DropMenu />
