@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <div className="w-100">
         <Header />
-        <div className="vh-100 dt w-100 bg-blue" />
+        <div className="vh-100 dt w-100 bg-dark-blue" />
       </div>
     );
   }
