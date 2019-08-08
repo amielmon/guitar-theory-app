@@ -7,7 +7,8 @@ class App extends Component {
     return (
       <div className="w-100">
         <Header />
-        <div className="flex items-center vh-100 dt w-100 bg-dark-blue">
+        <div className="vh-100 dt w-100 bg-dark-blue">
+          <div className ="pa5"/>
           <Fretboard/>
         </div>
       </div>
